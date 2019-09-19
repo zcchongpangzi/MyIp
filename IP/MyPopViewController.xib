@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="MyPopViewController">
+            <connections>
+                <outlet property="ipLabel" destination="7A3-cq-RPA" id="Vwc-Ub-66d"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView wantsLayer="YES" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lDZ-FA-8dR">
+                    <rect key="frame" x="94" y="23" width="112" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="MZG-1i-hH2"/>
+                        <constraint firstAttribute="height" constant="25" id="qNh-w2-4uq"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="复制IP地址" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mdL-Fk-VyO">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="btnClick:" target="-2" id="RLK-Hy-Gt0"/>
+                    </connections>
+                </button>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="sC1-Be-AFb">
+                    <rect key="frame" x="98" y="140" width="104" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="10V-ZX-wZ0"/>
+                        <constraint firstAttribute="height" constant="25" id="oUP-U1-dna"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="您的IP地址为" id="eVF-QJ-Yxt">
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7A3-cq-RPA">
+                    <rect key="frame" x="98" y="80" width="104" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="D4w-7x-FP7"/>
+                        <constraint firstAttribute="height" constant="25" id="Jym-tM-jSJ"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" alignment="center" title="192.168.1.1" id="7uD-GY-9WZ">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+            </subviews>
+            <constraints>
+                <constraint firstItem="7A3-cq-RPA" firstAttribute="centerY" secondItem="Hz6-mo-xeY" secondAttribute="centerY" id="RZ8-aX-Vbc"/>
+                <constraint firstAttribute="bottom" secondItem="lDZ-FA-8dR" secondAttribute="bottom" constant="30" id="ST2-jG-6SD"/>
+                <constraint firstItem="7A3-cq-RPA" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="TcT-7D-AcM"/>
+                <constraint firstItem="sC1-Be-AFb" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="ktd-Hq-lBj"/>
+                <constraint firstItem="sC1-Be-AFb" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="tpo-Bb-mYh"/>
+                <constraint firstItem="lDZ-FA-8dR" firstAttribute="centerX" secondItem="Hz6-mo-xeY" secondAttribute="centerX" id="vps-yd-fcX"/>
+            </constraints>
+            <point key="canvasLocation" x="121" y="170.5"/>
+        </customView>
+    </objects>
+</document>
